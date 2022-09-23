@@ -21,9 +21,6 @@ exports.eejsBlock_scripts = function (hookName, context, cb) {
     </script>
 `
   }
-  else{ 
-    var gaString = "<script>alert('ep_google_analytics.gaCode not set in settings.json, insert it in /admin/settings')</script>";
-  }
 
   context.content = gaString + context.content; // add Google Analytics to the contents
   
