@@ -8,7 +8,7 @@ if (settings.ep_google_analytics){
 }
 
 exports.eejsBlock_scripts = function (hookName, context, cb) {
-  if(gaCode){
+  if (gaCode) {
     var gaString = `
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=${gaCode}"></script>
@@ -20,9 +20,9 @@ exports.eejsBlock_scripts = function (hookName, context, cb) {
       gtag('config', '${gaCode}');
     </script>
 `
+  } else {
+    console.log("Google Analytics code not set.")
   }
-
-  context.content = gaString + context.content; // add Google Analytics to the contents
-  
+  context.content = gaString + context.content;
   return cb();
 }
