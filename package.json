@@ -1,5 +1,5 @@
 {
-  "name": "ep_google_analytics",
+  "name": "ep_google_analytics_setup",
   "version": "1.0.0",
   "description": "Etherpad plugin to use google analytics",
   "main": "index.js",
