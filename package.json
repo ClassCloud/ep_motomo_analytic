@@ -1,0 +1,11 @@
+{
+  "name": "ep_google_analytics",
+  "version": "1.0.0",
+  "description": "Etherpad plugin to use google analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seline@binus.edu",
+  "license": "ISC"
+}

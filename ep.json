@@ -1,0 +1,10 @@
+{
+  "parts":[
+    {
+      "name": "ep_google_analytics",
+      "hooks": {
+        "eejsBlock_scripts": "ep_google_analytics/index"
+      }
+    }
+  ]
+}
