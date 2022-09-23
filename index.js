@@ -10,19 +10,20 @@ if (settings.ep_google_analytics){
 exports.eejsBlock_scripts = function (hookName, context, cb) {
   if (gaCode) {
     var gaString = `
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=${gaCode}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=${gaCode}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', '${gaCode}');
-    </script>
-`
+        gtag('config', '${gaCode}');
+      </script>
+  `
+    context.content = gaString + context.content;
   } else {
     console.log("Google Analytics code not set.")
   }
-  context.content = gaString + context.content;
+  
   return cb();
 }
