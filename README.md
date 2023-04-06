@@ -1,4 +1,4 @@
-# Etherpad Google Analytics Plugin
+# Etherpad Matomo Analytics Plugin
 
 Usage
 -
