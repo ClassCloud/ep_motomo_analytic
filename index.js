@@ -28,7 +28,7 @@ exports.eejsBlock_scripts = function (hookName, context, cb) {
   `
     context.content = gaString + context.content;
   } else {
-    console.log("MAtomo Analytics code not set.")
+    console.log("Matomo Analytics code not set.")
   }
   
   return cb();
