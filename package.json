@@ -1,22 +1,22 @@
 {
-  "name": "ep_google_analytics_setup",
-  "version": "1.0.1",
-  "description": "Etherpad plugin to use google analytics",
+  "name": "ep_matomo_analytics_setup",
+  "version": "1.0.0",
+  "description": "Etherpad plugin to use matomo analytics",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Selsinee/ep_google_analytic.git"
+    "url": "git://github.com/ClassCloud/ep_matomo_analytic.git"
   },
   "author": {
-    "name": "Seline"
+    "name": "CLassCloud"
   },
   "license": "ISC",
-  "homepage": "https://github.com/Selsinee/ep_google_analytic.git",
+  "homepage": "https://github.com/ClassCloud/ep_matomo_analytic.git",
   "keywords": [
     "etherpad",
-    "google analytic"
+    "matomo analytic"
   ]
 }
