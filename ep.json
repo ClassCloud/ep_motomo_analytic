@@ -1,9 +1,9 @@
 {
   "parts":[
     {
-      "name": "ep_google_analytics_setup",
+      "name": "ep_motomo_analytics_setup",
       "hooks": {
-        "eejsBlock_scripts": "ep_google_analytics_setup/index"
+        "eejsBlock_scripts": "ep_motomo_analytics_setup/index"
       }
     }
   ]
